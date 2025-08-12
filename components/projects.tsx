@@ -22,6 +22,22 @@ const projects: Project[] = [
     link: "https://www.figma.com/design/V7HZZHylrCXrN4itnJswIT/HealthCare-Mobile-APP?node-id=0-1&p=f&t=xfosnuCF5w8yaLax-0",
   },
   {
+    title: "Nike Shoe UX Design",
+    description:
+      "Created an interactive, Nike-inspired shoe product page with bold typography, compelling text overlays, and strong visual hierarchy to enhance user engagement.",
+    image: "/project4.png",
+    tags: ["UI/UX Design", "Prototyping", "Figma Animation"],
+    link: "https://drive.google.com/file/d/1T-VbUSO6wFWBhOhLn4EXx0lQjJOMeECV/view",
+  },
+  {
+    title: "Beverage Landing Animations — Coke, Fanta, Sprite",
+    description:
+      "Branded hero sections with bold color blocks, wipe reveals, and parallax can motion, plus clean nav/CTA micro-interactions.",
+    image: "/project4a.png",
+    tags: ["Motion Design", "Landing Page", "Figma", "Micro-interactions"],
+    link: "https://drive.google.com/file/d/1sN9f_nqKpQlgUNyjAEpIHstZyU8YpKXI/view",
+  },
+  {
     title: "Electric Vehicle Simulation",
     description:
       "Led integration of 14 APIs with cross-functional leadership, creating seamless data visualization.",

@@ -21,7 +21,7 @@ export default function About() {
     <Section
       id="about"
       title="About Me"
-      subtitle="UX/UI Designer with 4+ years' experience, focused on accessibility, responsive interfaces, and user-centered research."
+      subtitle="UX/UI Designer with 3+ years' experience, focused on accessibility, responsive interfaces, and user-centered research."
     >
       <motion.div
         initial={{ opacity: 0, y: 18 }}
@@ -46,7 +46,7 @@ export default function About() {
           <div className="rounded-3xl border border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 p-8 lg:p-10 backdrop-blur-xl shadow-2xl">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
               {
-                "I’m a UX/UI Designer with 4+ years’ experience across healthcare and transportation. I use test-driven design and scalable Figma systems to craft accessible, inclusive, and responsive interfaces that feel effortless. I partner closely with product and engineering from discovery to delivery."
+                "I’m a UX/UI Designer with 3+ years’ experience across healthcare and transportation. I use test-driven design and scalable Figma systems to craft accessible, inclusive, and responsive interfaces that feel effortless. I partner closely with product and engineering from discovery to delivery."
               }
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-8">

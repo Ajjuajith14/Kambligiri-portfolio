@@ -1,46 +1,36 @@
-/* --- Tailwind core (must be first) --- */
+/* 3-line Tailwind setup (required when using @layer) */
+/* @import "tw-animate-css"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* --- Theme tokens (CSS variables) --- */
+/* ---- Theme tokens (CSS variables) ---- */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
-
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
-
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
-
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
-
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-
   --radius: 0.625rem;
-
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -51,124 +41,175 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* ---- Dark theme (softened text contrast) ---- */
 .dark {
   --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-
+  --foreground: oklch(0.92 0 0);                 /* was 0.985 (too bright) */
   --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-
+  --card-foreground: oklch(0.92 0 0);
   --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-
+  --popover-foreground: oklch(0.92 0 0);
   --primary: oklch(0.985 0 0);
   --primary-foreground: oklch(0.205 0 0);
-
   --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-
+  --secondary-foreground: oklch(0.92 0 0);       /* softened */
   --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-
+  --muted-foreground: oklch(0.78 0 0);           /* easier on eyes */
   --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-
+  --accent-foreground: oklch(0.92 0 0);          /* softened */
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
   --ring: oklch(0.439 0 0);
-
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-
   --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.92 0 0);         /* softened */
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-accent-foreground: oklch(0.92 0 0);  /* softened */
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
 }
 
-/* --- Base resets that rely on Tailwind tokens --- */
+/* ---- Tailwind theme tokens mapping (optional; safe to keep) ---- */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* ---- Base layer ---- */
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border outline-ring/50;
   }
 
-  html, body {
-    height: 100%;
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  /* Optional: radius tokens mapped to utilities that use them */
-  :root {
-    --radius-sm: calc(var(--radius) - 4px);
-    --radius-md: calc(var(--radius) - 2px);
-    --radius-lg: var(--radius);
-    --radius-xl: calc(var(--radius) + 4px);
+  /* Optional: dark typography fine-tuning */
+  @layer base {
+  /* Dark mode heading colors */
+  .dark h1, 
+  .dark h2, 
+  .dark h3, 
+  .dark .section-title {
+    color: oklch(59% 0.05389 270.741); /* Softer pastel blue-purple for visibility */
+    font-weight: 700;
+  }
+
+  /* Optional: subheadings or muted headings */
+  .dark h4, 
+  .dark h5, 
+  .dark h6 {
+    color: oklch(0.8 0.05 250); /* Slightly dimmer but still readable */
+  }
+}
+  .dark p, .dark li, .dark span, .dark label, .dark small,
+  .dark input, .dark textarea {
+    color: oklch(0.9 0 0);
+  }
+
+  /* Enhanced scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-slate-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400 dark:bg-slate-500;
   }
 }
 
-/* --- Utilities & animations --- */
+/* ---- Utilities & animations ---- */
 @layer utilities {
-  /* Animations */
   @keyframes fade-in {
     from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
   @keyframes fade-in-up {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
   @keyframes glow {
     0%, 100% { box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); }
     50%      { box-shadow: 0 0 30px rgba(56, 189, 248, 0.5); }
   }
 
-  .animate-fade-in {
-    animation: fade-in 0.8s ease-out forwards;
-  }
+  .animate-fade-in { animation: fade-in 0.8s ease-out forwards; }
+  .animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; opacity: 0; }
+  .animate-glow { animation: glow 2s ease-in-out infinite; }
 
-  .animate-fade-in-up {
-    animation: fade-in-up 0.8s ease-out forwards;
-    opacity: 0;
-  }
-
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite;
-  }
-
-  /* Glass morphism */
+  /* Glass utilities */
   .glass {
-    @apply backdrop-blur-xl bg-white/80 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700;
+    @apply backdrop-blur-xl bg-white/90 dark:bg-slate-900/90 border border-slate-200/50 dark:border-slate-700/50;
   }
-
   .glass-strong {
-    @apply backdrop-blur-2xl bg-white/90 dark:bg-slate-900/90 border border-slate-300 dark:border-slate-600;
+    @apply backdrop-blur-2xl bg-white/95 dark:bg-slate-900/95 border border-slate-300/60 dark:border-slate-600/60;
   }
 
-  /* Force high-contrast text helpers */
-  .text-high-contrast {
-    color: rgb(15 23 42) !important; /* slate-900 */
-  }
-  .dark .text-high-contrast {
-    color: rgb(248 250 252) !important; /* slate-50 */
-  }
+  /* High-contrast helpers */
+  .text-high-contrast { color: rgb(15 23 42) !important; }       /* slate-900 */
+  .dark .text-high-contrast { color: rgb(248 250 252) !important; } /* slate-50 */
+
+  /* Responsive text utilities */
+  .text-responsive-xs { @apply text-xs sm:text-sm; }
+  .text-responsive-sm { @apply text-sm sm:text-base; }
+  .text-responsive-base { @apply text-base sm:text-lg; }
+  .text-responsive-lg { @apply text-lg sm:text-xl lg:text-2xl; }
+  .text-responsive-xl { @apply text-xl sm:text-2xl lg:text-3xl; }
 }
 
-/* --- Reduced motion (pure CSS, safe) --- */
+/* ---- Reduced motion ---- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

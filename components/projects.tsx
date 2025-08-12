@@ -19,7 +19,7 @@ const projects: Project[] = [
       "Improved onboarding, accessibility, and task completion through user-centered design and comprehensive testing.",
     image: "/project_1.jpg",
     tags: ["Accessibility", "Design System", "A/B Testing"],
-    link: "https://example.com/health-app",
+    link: "https://www.figma.com/design/V7HZZHylrCXrN4itnJswIT/HealthCare-Mobile-APP?node-id=0-1&p=f&t=xfosnuCF5w8yaLax-0",
   },
   {
     title: "Electric Vehicle Simulation",

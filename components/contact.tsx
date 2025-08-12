@@ -7,7 +7,7 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useRef, useState } from "react";
 import { z } from "zod";
 // import { zodResolver } from "@hookform/resolvers/zod"
@@ -158,7 +158,7 @@ export default function Contact() {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-500 mb-2"
               >
                 Name
               </label>
@@ -166,14 +166,14 @@ export default function Contact() {
                 id="name"
                 name="name"
                 placeholder="Your full name"
-                className="bg-white/60 dark:bg-slate-900/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
+                className="bg-white/60 dark:bg-slate-300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-500 mb-2"
               >
                 Email
               </label>
@@ -182,14 +182,14 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="your.email@example.com"
-                className="bg-white/60 dark:bg-slate-900/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
+                className="bg-white/60 dark:bg-slate-3300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                className="block text-sm font-medium text-slate-700 dark:text-slate-500 mb-2"
               >
                 Message
               </label>
@@ -197,7 +197,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 placeholder="Tell me about your project, ideas, or just say hello..."
-                className="min-h-[140px] bg-white/60 dark:bg-slate-900/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400 resize-none"
+                className="min-h-[140px] bg-white/60 dark:bg-slate-300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400 resize-none"
                 required
               />
             </div>
@@ -223,22 +223,22 @@ export default function Contact() {
           className="md:col-span-2 rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-xl shadow-[0_20px_60px_rgba(0,0,0,0.10)]"
         >
           <div className="mx-auto max-w-xl text-center justify-center align-center">
-            <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">
+            <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-600">
               Connect
             </h3>
-            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-600">
               Follow or reach out on the platforms below.
             </p>
             <div className="mt-5 flex justify-center items-center gap-4">
               <MagneticIcon href="mailto:kambligiri78@gmail.com" label="Email">
-                <Mail className="size-5" />
+                <Mail className="size-5 dark:bg-slate-500 hover:bg-slate-700 border-b-10" />
               </MagneticIcon>
-              <MagneticIcon href="https://github.com/" label="GitHub">
+              {/* <MagneticIcon href="https://github.com/" label="GitHub">
                 <Github className="size-5" />
               </MagneticIcon>
               <MagneticIcon href="https://linkedin.com/" label="LinkedIn">
                 <Linkedin className="size-5" />
-              </MagneticIcon>
+              </MagneticIcon> */}
             </div>
           </div>
         </motion.div>

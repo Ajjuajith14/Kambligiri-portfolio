@@ -130,7 +130,7 @@ export default function Resume() {
         <Button
           onClick={handleDownload}
           variant="outline"
-          className="w-full sm:w-auto border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300 bg-transparent"
+          className="w-full sm:w-auto border-slate-300 dark:bg-slate-400 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300 bg-transparent"
         >
           <Download className="size-4 mr-2" />
           Download PDF
@@ -202,7 +202,7 @@ export default function Resume() {
               onClick={handleOpenNewTab}
               variant="outline"
               size="sm"
-              className="border-slate-300 dark:border-slate-600 bg-transparent"
+              className="w-full sm:w-auto bg-gradient-to-r from-teal-600 to-cyan-600 text-white hover:from-teal-700 hover:to-cyan-700 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <ExternalLink className="size-4 mr-2" />
               View in Browser
@@ -211,7 +211,7 @@ export default function Resume() {
               onClick={handleDownload}
               variant="outline"
               size="sm"
-              className="border-slate-300 dark:border-slate-600 bg-transparent"
+              className="border-slate-300 dark:bg-gray-500 dark:border-slate-600 bg-transparent"
             >
               <Download className="size-4 mr-2" />
               Download Instead

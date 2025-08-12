@@ -101,26 +101,22 @@ export default function Hero() {
                 experiences.
               </span>
             </motion.div>
-
             <h1 className="mt-8 text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
               <span className={`bg-clip-text text-transparent ${nameGradient}`}>
                 Kambli Giri
               </span>
             </h1>
-
-            <div className="mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 dark:text-slate-200 min-h-[3rem]">
+            <div className="mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-800 dark:text-slate-500 min-h-[3rem]">
               {typed}
               <span className="ml-1 animate-pulse text-teal-600 dark:text-teal-400">
                 |
               </span>
             </div>
-
-            <p className="mt-8 text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-slate-800 dark:text-slate-500 mb-8 leading-relaxed">
               {
                 "Crafting beautiful, accessible digital experiences that put users first. Specializing in design systems, user research, and inclusive design."
               }
             </p>
-
             <motion.div
               onMouseMove={onMouseMove}
               className="relative mt-12 inline-flex items-center gap-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/90 dark:bg-slate-800/90 p-3 backdrop-blur-xl shadow-xl"

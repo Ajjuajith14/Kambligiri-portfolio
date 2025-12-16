@@ -6,12 +6,12 @@ import { useRef } from "react";
 
 const items = [
   {
-    degree: "MS in Information Science",
+    degree: "Master of Science in Information Science",
     school: "University of North Texas",
   },
   {
-    degree: "B.Tech in EEE",
-    school: "Kakatiya University",
+    degree: "Bachelor of Technology in Electrical and Electronics Engineering",
+    school: "Kakatiya University College of Engineering and Technology",
   },
 ];
 

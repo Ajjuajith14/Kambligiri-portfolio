@@ -85,7 +85,7 @@ export default function Contact() {
 
       // Use FormSubmit.co to send the form data
       const response = await fetch(
-        "https://formsubmit.co/ajax/kambligiri78@gmail.com.com",
+        "https://formsubmit.co/ajax/kambligiri502@gmail.com",
         {
           method: "POST",
           headers: {
@@ -166,7 +166,7 @@ export default function Contact() {
                 id="name"
                 name="name"
                 placeholder="Your full name"
-                className="bg-white/60 dark:bg-slate-300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
+                className="bg-slate-200/90 dark:bg-slate-300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
                 required
               />
             </div>
@@ -182,7 +182,7 @@ export default function Contact() {
                 name="email"
                 type="email"
                 placeholder="your.email@example.com"
-                className="bg-white/60 dark:bg-slate-3300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
+                className="bg-slate-200/60 dark:bg-slate-3300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400"
                 required
               />
             </div>
@@ -197,7 +197,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 placeholder="Tell me about your project, ideas, or just say hello..."
-                className="min-h-[140px] bg-white/60 dark:bg-slate-300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400 resize-none"
+                className="min-h-[140px] bg-slate-200/60 dark:bg-slate-300/40 border-white/30 dark:border-slate-700/30 text-slate-800 dark:text-slate-200 placeholder:text-slate-600 dark:placeholder:text-slate-400 focus:border-teal-400 dark:focus:border-teal-400 resize-none"
                 required
               />
             </div>
@@ -229,16 +229,15 @@ export default function Contact() {
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-600">
               Follow or reach out on the platforms below.
             </p>
-            <div className="mt-5 flex justify-center items-center gap-4">
-              <MagneticIcon href="mailto:kambligiri78@gmail.com" label="Email">
-                <Mail className="size-5 dark:bg-slate-500 hover:bg-slate-700 border-b-10" />
-              </MagneticIcon>
-              {/* <MagneticIcon href="https://github.com/" label="GitHub">
-                <Github className="size-5" />
-              </MagneticIcon>
-              <MagneticIcon href="https://linkedin.com/" label="LinkedIn">
-                <Linkedin className="size-5" />
-              </MagneticIcon> */}
+            <div className="flex h-full items-center justify-center">
+              <div className="flex gap-4">
+                <MagneticIcon
+                  href="mailto:kambligiri502@gmail.com"
+                  label="Email"
+                >
+                  <Mail className="size-5 dark:bg-slate-500 hover:bg-slate-700" />
+                </MagneticIcon>
+              </div>
             </div>
           </div>
         </motion.div>

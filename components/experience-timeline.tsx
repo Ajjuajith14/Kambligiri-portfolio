@@ -14,29 +14,27 @@ type Role = {
 const roles: Role[] = [
   {
     company: "Designit",
-    period: "2023 — Present",
-    title: "Senior UI/UX Designer",
+    period: "Sep 2024 — Present",
+    title: "UX/UI Designer",
     highlights: [
-      "Led accessibility overhaul for enterprise dashboard",
-      "Designed scalable Figma component library",
-      "Partnered with research to validate flows",
+      "Enhanced cross-team design alignment by 18% through structured ideation sessions, UI style guides, and UX documentation",
+      "Increased prototype validation speed by 22% using high-fidelity Figma prototypes and moderated UserTesting studies",
+      "Improved accessibility compliance by 19% through iterative usability testing and WCAG criteria application",
+      "Accelerated developer handoff efficiency by 24% via annotated design assets and version-controlled GitHub updates",
     ],
-    metrics: [
-      "+55% accessibility",
-      "+28% task success",
-      "-20% time-to-complete",
-    ],
+    metrics: ["+18% alignment", "+22% validation", "+19% accessibility"],
   },
   {
     company: "Kellton Tech",
-    period: "2020 — 2023",
-    title: "UI/UX Designer",
+    period: "Mar 2021 — Jun 2023",
+    title: "Product Designer",
     highlights: [
-      "Redesigned mobile health app",
-      "Improved design handoff with Zeplin",
-      "Championed WCAG and 508 compliance",
+      "Led early-stage discovery workshops using Miro, accelerating requirement clarity by 30% during initial phases",
+      "Built detailed user flows and implemented theme customization, reducing design-to-development friction by 25%",
+      "Developed modular design systems with Google Analytics dashboards, improving task completion rates by 18%",
+      "Conducted iterative A/B testing with Git version control, resulting in 22% uplift in conversion metrics",
     ],
-    metrics: ["+40% revenue", "+35% retention", "+22 NPS"],
+    metrics: ["+30% clarity", "-25% friction", "+22% conversions"],
   },
 ];
 
@@ -87,7 +85,7 @@ function TimelineCard({
           className={cn(
             "lg:col-start-1 lg:col-end-2",
             align === "right" && "lg:col-start-3 lg:col-end-4",
-            align === "left" ? "text-right" : "text-left"
+            align === "left" ? "text-left" : "text-left"
           )}
         >
           <TimelineContent role={role} />

@@ -6,7 +6,7 @@ import { Brush, Code2, Accessibility, Palette, Search } from "lucide-react";
 
 const categories = [
   {
-    name: "Design Tools",
+    name: "Design & Prototyping",
     icon: Brush,
     items: [
       {
@@ -24,72 +24,83 @@ const categories = [
         color: "from-orange-500 to-yellow-500",
         bgColor: "bg-orange-50 dark:bg-orange-900/20",
       },
-    ],
-    tip: "Tools for crafting UI, prototyping, and design systems.",
-  },
-  {
-    name: "Design Process",
-    icon: Palette,
-    items: [
       {
-        name: "Design Systems",
-        color: "from-blue-500 to-cyan-500",
-        bgColor: "bg-blue-50 dark:bg-blue-900/20",
-      },
-      {
-        name: "Prototyping",
-        color: "from-green-500 to-emerald-500",
-        bgColor: "bg-green-50 dark:bg-green-900/20",
-      },
-    ],
-    tip: "Systematic approaches to design and user experience.",
-  },
-  {
-    name: "Research & Testing",
-    icon: Search,
-    items: [
-      {
-        name: "User Research",
-        color: "from-indigo-500 to-purple-500",
-        bgColor: "bg-indigo-50 dark:bg-indigo-900/20",
-      },
-      {
-        name: "Usability Testing",
-        color: "from-teal-500 to-cyan-500",
-        bgColor: "bg-teal-50 dark:bg-teal-900/20",
-      },
-    ],
-    tip: "Methods to validate usability and business impact.",
-  },
-  {
-    name: "Tech Stack",
-    icon: Code2,
-    items: [
-      {
-        name: "Angular",
+        name: "InVision",
         color: "from-red-500 to-pink-500",
         bgColor: "bg-red-50 dark:bg-red-900/20",
       },
       {
-        name: "HTML",
-        color: "from-orange-500 to-red-500",
-        bgColor: "bg-orange-50 dark:bg-orange-900/20",
-      },
-      {
-        name: "CSS",
-        color: "from-blue-500 to-indigo-500",
+        name: "Axure RP",
+        color: "from-blue-500 to-purple-500",
         bgColor: "bg-blue-50 dark:bg-blue-900/20",
       },
       {
-        name: "JavaScript",
+        name: "Balsamiq",
         color: "from-yellow-500 to-orange-500",
         bgColor: "bg-yellow-50 dark:bg-yellow-900/20",
       },
+      {
+        name: "Adobe Photoshop",
+        color: "from-teal-500 to-blue-500",
+        bgColor: "bg-teal-50 dark:bg-teal-900/20",
+      },
+      {
+        name: "Adobe Illustrator",
+        color: "from-orange-500 to-red-500",
+        bgColor: "bg-orange-50 dark:bg-orange-900/20",
+      },
     ],
-    tip: "Frontend technologies for implementation.",
+    tip: "Comprehensive design and prototyping toolkit for high-fidelity work.",
   },
   {
-    name: "Accessibility",
+    name: "UX Research & Testing",
+    icon: Search,
+    items: [
+      {
+        name: "UserTesting",
+        color: "from-indigo-500 to-purple-500",
+        bgColor: "bg-indigo-50 dark:bg-indigo-900/20",
+      },
+      {
+        name: "Lookback",
+        color: "from-purple-500 to-pink-500",
+        bgColor: "bg-purple-50 dark:bg-purple-900/20",
+      },
+      {
+        name: "Maze",
+        color: "from-blue-500 to-cyan-500",
+        bgColor: "bg-blue-50 dark:bg-blue-900/20",
+      },
+      {
+        name: "Hotjar",
+        color: "from-orange-500 to-yellow-500",
+        bgColor: "bg-orange-50 dark:bg-orange-900/20",
+      },
+      {
+        name: "A/B Testing",
+        color: "from-green-500 to-emerald-500",
+        bgColor: "bg-green-50 dark:bg-green-900/20",
+      },
+      {
+        name: "UX Documentation",
+        color: "from-slate-500 to-gray-500",
+        bgColor: "bg-slate-50 dark:bg-slate-900/20",
+      },
+      {
+        name: "User Flows",
+        color: "from-teal-500 to-cyan-500",
+        bgColor: "bg-teal-50 dark:bg-teal-900/20",
+      },
+      {
+        name: "UI Style Guides",
+        color: "from-pink-500 to-rose-500",
+        bgColor: "bg-pink-50 dark:bg-pink-900/20",
+      },
+    ],
+    tip: "Research and testing methods to validate and iterate designs.",
+  },
+  {
+    name: "Accessibility & Compliance",
     icon: Accessibility,
     items: [
       {
@@ -102,8 +113,118 @@ const categories = [
         color: "from-green-500 to-emerald-500",
         bgColor: "bg-green-50 dark:bg-green-900/20",
       },
+      {
+        name: "Stark Plugin",
+        color: "from-purple-500 to-pink-500",
+        bgColor: "bg-purple-50 dark:bg-purple-900/20",
+      },
     ],
-    tip: "Inclusive design principles and standards.",
+    tip: "Inclusive design principles and WCAG compliance standards.",
+  },
+  {
+    name: "Collaboration & Planning",
+    icon: Palette,
+    items: [
+      {
+        name: "FigJam",
+        color: "from-blue-500 to-cyan-500",
+        bgColor: "bg-blue-50 dark:bg-blue-900/20",
+      },
+      {
+        name: "Miro",
+        color: "from-yellow-500 to-orange-500",
+        bgColor: "bg-yellow-50 dark:bg-yellow-900/20",
+      },
+      {
+        name: "Design Systems",
+        color: "from-pink-500 to-rose-500",
+        bgColor: "bg-pink-50 dark:bg-pink-900/20",
+      },
+      {
+        name: "Prototyping",
+        color: "from-green-500 to-emerald-500",
+        bgColor: "bg-green-50 dark:bg-green-900/20",
+      },
+    ],
+    tip: "Tools for cross-functional collaboration and design workflows.",
+  },
+  {
+    name: "Web & Product Technologies",
+    icon: Code2,
+    items: [
+      {
+        name: "HTML5",
+        color: "from-orange-500 to-red-500",
+        bgColor: "bg-orange-50 dark:bg-orange-900/20",
+      },
+      {
+        name: "CSS3",
+        color: "from-blue-500 to-indigo-500",
+        bgColor: "bg-blue-50 dark:bg-blue-900/20",
+      },
+      {
+        name: "JavaScript",
+        color: "from-yellow-500 to-orange-500",
+        bgColor: "bg-yellow-50 dark:bg-yellow-900/20",
+      },
+      {
+        name: "WordPress",
+        color: "from-purple-500 to-pink-500",
+        bgColor: "bg-purple-50 dark:bg-purple-900/20",
+      },
+    ],
+    tip: "Frontend technologies and platforms for web and product development.",
+  },
+  {
+    name: "Data & Analytics",
+    icon: Search,
+    items: [
+      {
+        name: "Google Analytics",
+        color: "from-red-500 to-orange-500",
+        bgColor: "bg-red-50 dark:bg-red-900/20",
+      },
+      {
+        name: "A/B Testing",
+        color: "from-blue-500 to-cyan-500",
+        bgColor: "bg-blue-50 dark:bg-blue-900/20",
+      },
+    ],
+    tip: "Analytics and testing tools for data-driven design decisions.",
+  },
+  {
+    name: "Version Control & DevTools",
+    icon: Code2,
+    items: [
+      {
+        name: "Git",
+        color: "from-orange-500 to-red-500",
+        bgColor: "bg-orange-50 dark:bg-orange-900/20",
+      },
+      {
+        name: "GitHub",
+        color: "from-gray-500 to-slate-500",
+        bgColor: "bg-gray-50 dark:bg-gray-900/20",
+      },
+    ],
+    tip: "Version control and collaboration for design-engineering handoff.",
+  },
+  {
+    name: "Simulation & Engineering",
+    icon: Code2,
+    items: [
+      {
+        name: "MATLAB",
+        color: "from-red-500 to-orange-500",
+        bgColor: "bg-red-50 dark:bg-red-900/20",
+      },
+      {
+        name: "Simulink",
+        color: "from-orange-500 to-yellow-500",
+        bgColor: "bg-orange-50 dark:bg-orange-900/20",
+      },
+    ],
+    tip: "Engineering tools for simulation and data modeling.",
   },
 ];
 

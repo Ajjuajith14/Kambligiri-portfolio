@@ -16,47 +16,17 @@ const projects: Project[] = [
   {
     title: "Mobile Health App Redesign",
     description:
-      "Improved onboarding, accessibility, and task completion through user-centered design and comprehensive testing.",
+      "Increased task completion rate by 40% by redesigning the mobile app interface for elderly users through targeted usability evaluations using Figma, rapid iteration in Balsamiq, and accessibility validation aligned with WCAG guidelines.",
     image: "/project_1.jpg",
-    tags: ["Accessibility", "Design System", "A/B Testing"],
+    tags: ["Figma", "Balsamiq", "WCAG"],
     link: "https://www.figma.com/design/V7HZZHylrCXrN4itnJswIT/HealthCare-Mobile-APP?node-id=0-1&p=f&t=xfosnuCF5w8yaLax-0",
-  },
-  {
-    title: "Nike Shoe UX Design",
-    description:
-      "Created an interactive, Nike-inspired shoe product page with bold typography, compelling text overlays, and strong visual hierarchy to enhance user engagement.",
-    image: "/project4.png",
-    tags: ["UI/UX Design", "Prototyping", "Figma Animation"],
-    link: "https://drive.google.com/file/d/1T-VbUSO6wFWBhOhLn4EXx0lQjJOMeECV/view",
-  },
-  {
-    title: "Beverage Landing Animations — Coke, Fanta, Sprite",
-    description:
-      "Branded hero sections with bold color blocks, wipe reveals, and parallax can motion, plus clean nav/CTA micro-interactions.",
-    image: "/project4a.png",
-    tags: ["Motion Design", "Landing Page", "Figma", "Micro-interactions"],
-    link: "https://drive.google.com/file/d/1sN9f_nqKpQlgUNyjAEpIHstZyU8YpKXI/view",
   },
   {
     title: "Electric Vehicle Simulation",
     description:
-      "Led integration of 14 APIs with cross-functional leadership, creating seamless data visualization.",
+      "Delivered 100% of project milestones on time by engineering an electric vehicle simulation model using integrated data workflows in MATLAB, component logic modeling in Simulink, and collaborative version control through GitHub.",
     image: "/project_2.png",
-    tags: ["API", "Leadership", "Data Viz"],
-  },
-  {
-    title: "Ice Cream Flavor Campaign — Category Animations",
-    description:
-      "Short hero animations for generic flavors (Chocolate, Strawberry, Vanilla, Pistachio, Mango). Bold typography, floating garnish elements, and wipe transitions designed for social posts and landing pages—no brand assets used.",
-    tags: [
-      "Motion Design",
-      "Canva",
-      "Food & Beverage",
-      "Landing Page",
-      "Micro-interactions",
-    ],
-    image: "/project_5.png",
-    link: "https://drive.google.com/file/d/1CUn8JKYpSZAzgczfkPO4xCO5sH6YbabO/view?usp=drivesdk",
+    tags: ["MATLAB", "Simulink", "GitHub"],
   },
 ];
 

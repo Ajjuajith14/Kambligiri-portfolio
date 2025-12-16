@@ -58,7 +58,11 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -60]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
   const typed = useTypewriter(
-    ["UI/UX Designer", "Human-Centered Creator", "Design Systems Advocate"],
+    [
+      "UI/UX Designer",
+      "Product Experience Specialist",
+      "Accessibility Advocate",
+    ],
     55,
     1300
   );
@@ -114,7 +118,7 @@ export default function Hero() {
             </div>
             <p className="text-lg text-slate-800 dark:text-slate-500 mb-8 leading-relaxed">
               {
-                "Crafting beautiful, accessible digital experiences that put users first. Specializing in design systems, user research, and inclusive design."
+                "UX/UI Designer with proven expertise in product experience, accessibility, and interface engineering. Delivering measurable improvements to interaction quality, usability outcomes, and cross-functional alignment."
               }
             </p>
             <motion.div
